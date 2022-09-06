@@ -1,0 +1,13 @@
+.add-section {
+    border: 1px dotted rgb(18, 16, 153);
+    padding: 5px;
+    margin: 10px;
+    max-width: fit-content;
+}
+.result-section {
+    min-width: 100px;
+    max-width: 100px;
+    border: 1px dotted rgb(231, 106, 23);
+    padding: 10px;
+    margin: 10px
+}

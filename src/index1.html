@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>webpack44_title</title>
+        <!-- <link rel="stylesheet" type="text/css" href="./styles.scss"> -->
+        <!-- You can not "attach" a SASS/SCSS file to an HTML document. 
+            SASS/SCSS is a CSS preprocessor that runs on the server and compiles to CSS code that your browser understands. 
+            If you Attach your sass into your HTML file then your Browser can't understand it. so don't try to use it.
+        --->
+        <link rel="stylesheet" type="text/css" href="./styles1.css">
+    </head>
+    <body>
+
+        <div class="main-container">
+            <div class="add-section">
+                <h3>Input Fields</h3>
+                <input id="num1" placeholder="enter number 1">&nbsp;&nbsp;
+                <input id="num2" placeholder="enter number 2">&nbsp;&nbsp;
+                <button onclick="addNumbers()">Add</button>
+            </div>
+            <div class="result-section">
+                <h3>Results</h3>
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <!-- WRONG -->
+        <!-- <script type="javascript" src="./index1.js"></script>       -->
+        
+        <!-- CORRECT --> <!-- One more thing... script tag should be placed at the end of body-->
+        <script src="./index1.js"></script>
+
+    </body>
+</html>
+
+
+<!-- https://www.codeinwp.com/blog/webpack-tutorial-for-beginners/ -->

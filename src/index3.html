@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>using gopal612-js-lib</title>        
+        <link rel="stylesheet" type="text/css" href="./styles3.css">
+        
+        <!-- remember to update the package version NOT gopal612-js-lib@1.0.0, but gopal612-js-lib@1.0.1-->
+        <script type="importmap">            
+            {
+                "imports": {        
+                    "@gopal612-js-lib": "https://unpkg.com/gopal612-js-lib@1.0.3/index.js"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="add-section">
+            <h3>Input Fields</h3>
+            <div><input id="num1" placeholder="enter number 1"></div>
+            <div><input id="num2" placeholder="enter number 2"></div>            
+            <button id="printPrimesId">print Primes</button>            
+        </div>
+        <div class="result-section">
+            <h3>Results</h3>
+            <div id="result"></div>
+        </div>
+        <script type="module" src="./index3.js" defer></script>
+    </body>
+</html>
