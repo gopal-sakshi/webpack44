@@ -58,7 +58,7 @@
         https://unpkg.com/browse/lodash-es@4.17.21/
         https://unpkg.com/browse/gopal612-js-lib@1.0.0/
         https://unpkg.com/browse/react@18.2.0/
-    To view in browser.... there will be browse path... but for importing .js code... dont use browse
+    To view in browser.... there will be 'browse' in the path... but for importing .js code... dont use browse
         https://unpkg.com/lodash-es@4.17.21/startCase.js
         https://unpkg.com/gopal612-js-lib@1.0.0/index.js
         https://unpkg.com/browse/react@18.2.0/umd/react.development.js

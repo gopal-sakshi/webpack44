@@ -17,9 +17,14 @@ index3.html:17          GET file:///home/vsspl/Desktop/frontEnd/webpack44/src/in
 
 Solution: 
 
-Looks like you're trying to open the web-page locally (via file:// protocol) i.e. double clicking the .html file. Unfortunately modules only work via HTTP(s), so all you need to do is use a local web server.
-
-Other option: use CORS disabled mode
+Looks like you're trying to open the web-page locally (via file:// protocol) 
+- ie by double clicking the .html file. 
+- Unfortunately modules only work via HTTP(s), so all you need to do is use a local web server.
+    if you want to use "import statement in js files" ===> then, you have to mention  <script type="module" ... >
+    then, you'll get CORS error
+- Option
+    run a localserver and serve the index.html file from there
+- Other option: use CORS disabled mode
 -------------------------------------------------------------------
 
 # Error 03
