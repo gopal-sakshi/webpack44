@@ -1,10 +1,12 @@
 {
   "name": "webpack44",
   "version": "1.0.0",
-  "description": "",
+  "description": "",  
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build1": "webpack",
+    "build1_explained": "u dont need config file... webpack by default looks in 'src' folder & bundles output to 'dist/main.js' folder",
+    "build2" : "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
