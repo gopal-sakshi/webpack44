@@ -1,12 +1,17 @@
 {
   "name": "webpack44",
   "version": "1.0.0",
-  "description": "",  
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build1": "webpack",
-    "build1_explained": "u dont need config file... webpack by default looks in 'src' folder & bundles output to 'dist/main.js' folder",
-    "build2" : "webpack --config webpack.config.js"
+    "build1_explained1": "u dont need config file... webpack by default looks in 'src' folder & bundles output to 'dist/main.js' folder",
+    "build1_explained2": "but comment everything in webpack.config.js @ root level for default config to work ",
+    "build2": "webpack --config webpack.config.js",
+    "build2Explained": "webpack.config.js is renamed as webpack_before_splitting.config.js",
+    "prod22": "webpack --config=webpack.config.prod.js",
+    "dev22": "webpack --config=webpack.config.dev.js",
+    "start22": "webpack-dev-server --config=webpack.config.dev.js --open"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +20,11 @@
     "gopal612-js-lib": "^1.0.3"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   }
 }
