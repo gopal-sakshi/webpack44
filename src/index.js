@@ -2,7 +2,7 @@ import './index.css'
 
 // we will create p1 ====> 'paragraph html element'
 const p1 = document.createElement('p');
-p1.textContent = 'Hello from webpack!';
+p1.textContent = 'Hello from index.js';
 document.body.append(p1);
 
 // we will create p2 ====> 'paragraph html element

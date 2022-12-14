@@ -3,7 +3,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    // entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        module1: './src/module1.js'
+    },
     output: {
         // filename: 'main.js',
         filename: '[name].[contenthash].js',            // this is cache busting
