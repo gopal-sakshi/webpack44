@@ -1,0 +1,4 @@
+// add other Babel configuration
+{
+    "presets": ["@babel/preset-env"]
+}

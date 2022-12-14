@@ -5,7 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        // filename: 'main.js',
+        filename: '[name].[contenthash].js',            // this is cache busting
+                                                            // main.2c66xxx7e0c.js
+                                                            // contenthash = 2c66xxxx7e0c
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
@@ -15,5 +18,14 @@ module.exports = {
             inject: true,
             template: path.resolve(__dirname, 'src', 'index.html'),
         }),
-    ]
+    ],
+    module: {
+        rules: [
+          {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+          },
+          
+        ]
+    }
 }
