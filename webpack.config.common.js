@@ -11,8 +11,8 @@ module.exports = {
     output: {
         // filename: 'main.js',
         filename: '[name].[contenthash].js',            // this is cache busting
-                                                            // main.2c66xxx7e0c.js
-                                                            // contenthash = 2c66xxxx7e0c
+        // main.2c66xxx7e0c.js
+        // contenthash = 2c66xxxx7e0c
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
@@ -25,11 +25,26 @@ module.exports = {
     ],
     module: {
         rules: [
-          {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-          },
-          
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(csv|tsv)$/i,
+                use: ['csv-loader'],
+            },
+            {
+                test: /\.xml$/i,
+                use: ['xml-loader'],
+            },
         ]
     }
 }

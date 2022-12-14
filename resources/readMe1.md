@@ -56,7 +56,8 @@ Other loaders
 - sass-loader =====> convert Sass/SCSS files to CSS before piping that output to css-loader & style-loader
 - babel-loader
     Babel is a JavaScript compiler that can turn ES6+ code into ES5 code.
-
+- Support for JSON is actually built-in, similar to NodeJS, meaning import Data from './data.json' will work by default. 
+- To import CSVs, TSVs, and XML =====> use the csv-loader & xml-loader
 
 
 style-loader takes CSS and places it in a style tag in your HTML. 

@@ -1,4 +1,16 @@
-body {
-    background: rgb(221, 177, 95);
-    color: white;
+@font-face {
+    font-family: 'MyFont23';
+    src: url('DroidSerif-Italic.ttf') format('ttf');
+    font-weight: 800;
+    font-style: oblique;
 }
+
+body {
+    background: #fcf9f9;
+    color: rgb(238, 113, 113);
+    /* background: url('./bear.jpeg'); */
+    /* background: url('./elephant.jpeg'); */
+}
+p {
+    font-family: 'MyFont23';
+}    

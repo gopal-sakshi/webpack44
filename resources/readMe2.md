@@ -15,4 +15,7 @@
 - It can't be used to dynamically split code with the core application logic.
 
 `prevent duplication`
+- dependOn option ====> allows to share the modules between the chunks:
+
+
 ----------------------------------------------------------------------------

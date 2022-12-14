@@ -1,0 +1,7 @@
+{
+    "clubName" : "Real Madrid",
+    "stadiumName": "Santiago Bernabeu",
+    "manager": "Ancelotti",
+    "players": ["Alaba", "Modric", "Kroos", "Benzema"],
+    "clTitles": 14
+}
