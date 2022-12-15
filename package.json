@@ -10,8 +10,13 @@
     "build2": "webpack --config webpack.config.js",
     "build2Explained": "webpack.config.js is renamed as webpack_before_splitting.config.js",
     "prod22": "webpack --config=webpack.config.prod.js",
+    "prod22Explained": "for some reason prod22 is not working, if I open html file -- WHY ???",
+    "prod23": "webpack",
     "dev22": "webpack --config=webpack.config.dev.js",
-    "start22": "webpack-dev-server --config=webpack.config.dev.js --open"
+    "start22": "webpack-dev-server --config=webpack.config.dev.js --open",
+    "server22": "node server.js",
+    "lib22": "webpack --config=webpack.config.lib.js",
+    "usingEnvi22": "webpack --config=webpack.config.envi.js --env goal=local23 --env production --progress"
   },
   "keywords": [],
   "author": "",
@@ -28,11 +33,13 @@
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "csv-loader": "^3.0.5",
+    "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
+    "webpack-dev-middleware": "^6.0.1",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0",
     "xml-loader": "^1.2.1"

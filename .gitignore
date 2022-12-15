@@ -2,3 +2,5 @@
 package-lock.json
 /dist
 /oldStuff
+/dist_lib
+/dist_envi

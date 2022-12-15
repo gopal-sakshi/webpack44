@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
     font-family: 'MyFont23';
     src: url('DroidSerif-Italic.ttf') format('ttf');
     font-weight: 700;
     font-style: oblique;
-}
+} */
 
 body {
     background: #fcf9f9;
@@ -11,6 +11,6 @@ body {
     /* background: url('./bear.jpeg'); */
     /* background: url('./elephant.jpeg'); */
 }
-p {
+/* p {
     font-family: 'MyFont23';
-}    
+}     */
