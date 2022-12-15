@@ -67,6 +67,42 @@ Rather than injecting CSS into our HTML as style tags
 - We'll use this in our production config while still just using style-loader in our development config.
 
 
+Prior to Webpack5 it was common to use: raw-loader, url-loader, file-loader
+- Raw-loader = imports your file as a string
+- Url-loader = inline your file as a data URI
+- file-loader = emit your file in the output directory
+{
+    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    use: [
+        { loader: 'url-loader', options: { limit: 8192 } },
+        { ... }
+    ]
+}
+
+In Webpack5, you don’t need them anymore!
+Asset modules = lets you handle loading assets much easier.
+`type` can take four values:
+- asset/resource : Equivalent to file-loader.
+- asset/inline: Equivalent to url-loader.
+- asset/source: Equivalent to raw-loader.
+- asset: Equivalent to url-loader with a limit size.
+
+url-loader
+- encode files to base64
+- include them inline rather than having them loaded as separate files with another request.
+- include them inline means
+    your bundle.js will have a string that represents all of the data 
+    - needed to represent the asset you put through url-loader
+    thats why there is a limit... you don't want to base64 encode 200kb images 
+    - because it will increase your bundle size by around that much
+- Loads the images you load via url(./some-asset.jpg) in your css files, converts them to base64 and places them instead of the url() statement.
+
+file-loader
+
+raw-loader
+- Loads the file as string, it doesn't convert the images to base64, and is used more for text or css files.
+
+
 # Cache Busting
 - To help the browser understand when a file has changed!
 - Your browser tries to be helpful by caching files it has seen before. 
