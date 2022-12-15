@@ -76,12 +76,12 @@ function component3() {
     const element = document.createElement('div');
     const btn = document.createElement('button'); 
     element.innerHTML = _.join(['print23', 'section'], '__');
-    btn.innerHTML = 'Click me and check the console!';
+    btn.innerHTML = 'Click me and check the console!!';
     btn.onclick = printMe;
     element.appendChild(btn);
 
     return element;
 }
  
-  document.body.appendChild(component3());
+document.body.appendChild(component3());
 /**************************************************************************/

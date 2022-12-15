@@ -13,10 +13,11 @@ module.exports = {
         filename: '[name].[contenthash].js',            // this is cache busting
         // main.2c66xxx7e0c.js
         // contenthash = 2c66xxxx7e0c
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        clean: true                                     // clean the dist folder everytime... use either this (or) new CleanWebpackPlugin()
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: true,

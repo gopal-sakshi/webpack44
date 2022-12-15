@@ -32,6 +32,8 @@ module.exports = merge(commonConfig, {
                             // which minifies .js files
         // new TerserPlugin(),
         new cssMinimizerPlugin(),
-      ]
+      ],
+      // runtimeChunk: 'single',         // if we have multiple entrypoints on single HTML file
+                                            // dont exactly know what it does though...
     }
 });

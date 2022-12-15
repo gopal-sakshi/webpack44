@@ -4,13 +4,17 @@ const path = require('path');
 
 module.exports = merge(commonConfig, {
     mode: 'development',
-    devtool: 'inline-source-map',
-    devServer: {
+    // devtool: 'inline-source-map',                   // for generating source-maps
+    
+    devServer: {            // webpack-dev-server configuration
         // contentBase: './dist',                       // deprecated since webpack v5
         static: {
             directory: path.join(__dirname, "./dist")
-        }
+        },
+        compress: true,
+        port: 9993
     },
+
     module: {
         rules: [
             {
