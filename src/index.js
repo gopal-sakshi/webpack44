@@ -23,6 +23,29 @@ document.body.appendChild(p2);
 /************************************************************************************************* */
 
 
+/*************************************************************************************************/
+import { cube } from './math1.js';
+// we did not import the square method from the src/math1.js
+    // this square method ===> deadcode (or) unused export
+
+function componentMath1() {
+    
+    const elementMath = document.createElement('pre');
+    // Lodash, now imported by this script
+    elementMath.innerHTML = [
+        'Math', 
+        'used_only_cube', 
+        '5 cube is ', 
+        cube(5)
+    ].join('\n\n');
+    
+    return elementMath;
+}
+ 
+document.body.appendChild(componentMath1());
+/*************************************************************************************************/
+
+
 
 
 /*************************************************************************************************/

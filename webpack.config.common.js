@@ -28,9 +28,9 @@ module.exports = {
 
     // 4 =======> using split chunks plugin... see optimization section, splitChunks property
     entry: {
-        // index: './src/index.js',
-        index: './src/indexx_without_loaders.js',
-        module1: './src/module1.js'
+        index: './src/index.js',
+        // index: './src/indexx_without_loaders.js',
+        module1: './src/module1.js'        
     },
 
     output: {
@@ -40,7 +40,7 @@ module.exports = {
             // contenthash = 2c66xxxx7e0c
         path: path.resolve(__dirname, 'dist'),
         clean: true,                                     // clean the dist folder everytime... use either this (or) new CleanWebpackPlugin()
-        publicPath : '/',           // used for express Server
+        // publicPath : '/',           // used for express Server
                                         // but if u use this, you cant directly open index.html file in dist folder
                                         // as js files will be "/module1.bundle.js" & not "module1.bundle.js"
     },
@@ -91,5 +91,7 @@ module.exports = {
                 },
             },
         },
+        usedExports: true,          // to determine used exports for each module.
+                                        // enabled by default in production    
     }
 }

@@ -4,9 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
+    // entry: {
+    //     index: './src/index.js',
+    //     module1: './src/module1.js',
+    // },
     entry: {
-        index: './src/index.js',
-        module1: './src/module1.js',
+        index: './src/index_lazyLoading.js',        
     },
     output: {
         filename: '[name].bundle.js',

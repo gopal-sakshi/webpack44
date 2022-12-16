@@ -4,7 +4,7 @@ const cssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const commonConfig = require('./webpack.config.common');
 
 module.exports = merge(commonConfig, {
-    mode: 'development',
+    mode: 'production',           // bundle will be minified
     // devtool: 'source-map',
     module: {
         rules: [

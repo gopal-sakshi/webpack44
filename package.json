@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "sideEffects": false,
+  "sideEffectsExplained": "to inform webpack that it can safely prune unused exports.",
   "scripts": {
     "build1": "webpack",
     "build1_explained1": "u dont need config file... webpack by default looks in 'src' folder & bundles output to 'dist/main.js' folder",
@@ -11,7 +13,7 @@
     "build2Explained": "webpack.config.js is renamed as webpack_before_splitting.config.js",
     "prod22": "webpack --config=webpack.config.prod.js",
     "prod22Explained": "for some reason prod22 is not working, if I open html file -- WHY ???",
-    "prod23": "webpack",
+    "prod23": "webpack",    
     "dev22": "webpack --config=webpack.config.dev.js",
     "start22": "webpack-dev-server --config=webpack.config.dev.js --open",
     "server22": "node server.js",

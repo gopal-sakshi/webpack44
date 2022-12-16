@@ -3,7 +3,7 @@ const commonConfig = require('./webpack.config.common');
 const path = require('path');
 
 module.exports = merge(commonConfig, {
-    mode: 'development',
+    mode: 'development',            // bundle will not be minified
     devtool: 'inline-source-map',                   // for generating source-maps
     
     devServer: {            // webpack-dev-server configuration
@@ -12,7 +12,9 @@ module.exports = merge(commonConfig, {
             directory: path.join(__dirname, "./dist")
         },
         compress: true,
-        port: 9993
+        port: 9993,
+        hot: true           // Since webpack-dev-server v4.0.0, Hot Module Replacement is enabled by default.
+                                // or use this ====> webpack serve --hot-only
     },
 
     module: {
