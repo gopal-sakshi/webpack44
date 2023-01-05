@@ -4,7 +4,8 @@ const path = require('path');
 
 module.exports = merge(commonConfig, {
     mode: 'development',            // bundle will not be minified
-    devtool: 'inline-source-map',                   // for generating source-maps
+    // devtool: 'inline-source-map',                   // for generating source-maps
+    devtool: 'sourcemap',                   // for generating source-maps
     
     devServer: {            // webpack-dev-server configuration
         // contentBase: './dist',                       // deprecated since webpack v5
